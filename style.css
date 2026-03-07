@@ -58,9 +58,9 @@ top:20px;
 left:20px;
 
 font-size:35px;
-color:white;
 
 background:#ff6f61;
+color:white;
 
 padding:10px 15px;
 
@@ -68,10 +68,60 @@ border-radius:8px;
 
 cursor:pointer;
 
-z-index:1000;
+z-index:1001;
 
 }
 
+
+/* MENU LATERALE */
+
+.side-menu{
+
+position:fixed;
+
+top:0;
+left:-250px;
+
+width:250px;
+height:100%;
+
+background:#023047;
+
+padding-top:100px;
+
+transition:0.4s;
+
+z-index:1000;
+
+box-shadow:3px 0px 10px rgba(0,0,0,0.4);
+
+}
+
+
+.side-menu a{
+
+display:block;
+
+padding:15px 25px;
+
+color:white;
+
+text-decoration:none;
+
+font-size:20px;
+
+transition:0.3s;
+
+}
+
+
+.side-menu a:hover{
+
+background:#ff6f61;
+
+padding-left:35px;
+
+}
 
 nav{
 
