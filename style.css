@@ -5,9 +5,8 @@ body {
     background:#e6f7ff;
 }
 
-/* HERO */
-.hero {
-    background-image: url("assets/spiaggia.jpg");
+.hero{
+    background-image: url("assets/spiaggia-mare.jpg"); /* nuova immagine di mare */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -143,28 +142,4 @@ footer {
 
 .whatsapp-button {
   animation: bounce 2s infinite;
-}
-/* ONDA ANIMATA SULLO SFONDO */
-.wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 200%;
-    height: 150px;
-    background: url('https://i.ibb.co/0cPNXnV/wave.png') repeat-x;
-    background-size: contain;
-    animation: waveMove 10s linear infinite;
-    opacity: 0.4;
-    z-index: 0;
-}
-
-@keyframes waveMove {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-}
-
-/* Assicurati che il testo hero sia sopra le onde */
-.hero-text {
-    position: relative;
-    z-index: 1;
 }
