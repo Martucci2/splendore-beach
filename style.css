@@ -1,405 +1,137 @@
-body{
-
-margin:0;
-font-family:Arial;
-background:#e6f7ff;
-
+/* RESET */
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#e6f7ff;
 }
 
-
-.hero{
-
-background-image:url("assets/spiaggia.jpg");
-background-size:cover;
-background-position:center;
-
-height:100vh;
-
-display:flex;
-align-items:center;
-justify-content:flex-end;
-
-color:white;
-text-align:right;
-
-padding-right:60px;
-
+/* HERO */
+.hero {
+    background-image: url("assets/spiaggia.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 60px;
+    color: white;
+    text-align: right;
+    position: relative;
 }
 
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-
-color:white;
-text-align:center;
-
-position:relative;
-
+/* TESTO HERO */
+.hero-text {
+    background: rgba(0,0,0,0.4);
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 400px;
 }
+.hero h1 { font-size:50px; margin:0; }
+.hero p { font-size:22px; }
 
-
-.hero-text{
-
-background:rgba(0,0,0,0.4);
-
-padding:25px;
-
-border-radius:10px;
-
-max-width:400px;
-
+/* MENU HAMBURGER */
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 40px;
+    color:white;
+    background:#ff6f61;
+    padding:10px 15px;
+    border-radius:10px;
+    cursor:pointer;
+    z-index: 1000;
 }
-
-
-.hero h1{
-
-font-size:50px;
-margin:0;
-
-}
-
-
-.hero p{
-
-font-size:22px;
-
-}
-
-.menu-icon{
-
-position:fixed;
-top:20px;
-left:20px;
-
-font-size:35px;
-
-background:#ff6f61;
-color:white;
-
-padding:10px 15px;
-
-border-radius:8px;
-
-cursor:pointer;
-
-z-index:1001;
-
-}
-
 
 /* MENU LATERALE */
+.side-menu, #menu {
+    position: fixed;
+    top:0;
+    left:-250px;
+    width: 250px;
+    height: 100%;
+    background:#023047;
+    padding-top:100px;
+    transition:0.4s;
+    z-index: 999;
+}
+.side-menu a, #menu a {
+    display:block;
+    padding:15px 25px;
+    font-size:20px;
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+.side-menu a:hover, #menu a:hover { background:#ff6f61; padding-left:35px; }
 
-.side-menu{
+/* SEZIONI */
+section {
+    padding:60px 20px;
+    text-align:center;
+}
+section h2 {
+    font-size:32px;
+    color:#ff6f61;
+}
+ul { list-style:none; padding:0; }
+ul li { padding:10px; font-size:18px; }
 
-position:fixed;
+/* COLORI SPECIALI SEZIONI */
+#specialita { background:#fff3e0; }
+#contatti { background:#e0f7fa; }
+#dove { background:#fff3e0; }
 
-top:0;
-left:-250px;
+/* BOTTONE MAPPA */
+.map-button {
+    display:inline-block;
+    margin:20px 0;
+    background:#ff6f61;
+    color:white;
+    padding:12px 25px;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
+.map-button:hover { background:#ff8c7a; }
 
-width:250px;
-height:100%;
-
-background:#023047;
-
-padding-top:100px;
-
-transition:0.4s;
-
-z-index:1000;
-
-box-shadow:3px 0px 10px rgba(0,0,0,0.4);
-
+/* FOOTER */
+footer {
+    background:#023047;
+    color:#ffd60a;
+    text-align:center;
+    padding:30px;
+    font-style:italic;
 }
 
-
-.side-menu a{
-
-display:block;
-
-padding:15px 25px;
-
-color:white;
-
-text-decoration:none;
-
-font-size:20px;
-
-transition:0.3s;
-
+/* BOTTONE WHATSAPP */
+.whatsapp-button {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    font-size:16px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 5px 10px rgba(0,0,0,0.3);
+    z-index:9999;
 }
-
-
-.side-menu a:hover{
-
-background:#ff6f61;
-
-padding-left:35px;
-
-}
-
-nav{
-
-display:none;
-
-position:fixed;
-
-top:70px;
-left:20px;
-
-background:white;
-
-padding:20px;
-
-border-radius:10px;
-
-box-shadow:0 5px 10px rgba(0,0,0,0.3);
-
-z-index:1000;
-
-}
-
-
-nav a{
-
-display:block;
-margin:12px 0;
-
-font-size:18px;
-
-color:#023047;
-
-text-decoration:none;
-
-font-weight:bold;
-
-}
-
-
-nav a:hover{
-
-color:#ff6f61;
-
-}
-
-nav{
-
-display:none;
-
-position:absolute;
-
-top:70px;
-left:20px;
-
-background:white;
-padding:20px;
-
-border-radius:10px;
-
-box-shadow:0 5px 10px rgba(0,0,0,0.3);
-
-}
-
-
-nav a{
-
-display:block;
-margin:10px 0;
-
-color:#023047;
-text-decoration:none;
-
-font-weight:bold;
-
-}
-
-
-nav a:hover{
-
-color:#ff6f61;
-
-}
-
-
-section{
-
-padding:60px 20px;
-text-align:center;
-
-}
-
-
-section h2{
-
-color:#ff6f61;
-font-size:32px;
-
-}
-
-
-ul{
-
-list-style:none;
-padding:0;
-
-}
-
-
-ul li{
-
-padding:10px;
-font-size:18px;
-
-}
-
-
-#specialita{
-
-background:#fff3e0;
-
-}
-
-
-#contatti{
-
-background:#e0f7fa;
-
-}
-
-
-#dove{
-
-background:#fff3e0;
-
-}
-
-
-footer{
-
-background:#023047;
-color:#ffd60a;
-
-text-align:center;
-
-padding:30px;
-
-font-style:italic;
-
-}
-.menu-icon {
-
-position: fixed;
-top: 20px;
-left: 20px;
-
-font-size: 40px;
-
-color: white;
-background: #ff6f61;
-
-padding: 10px 15px;
-
-border-radius: 10px;
-
-cursor: pointer;
-
-z-index: 9999;
-
-}
-
-.menu {
-
-position: fixed;
-top: 0;
-left: -250px;
-
-width: 250px;
-height: 100%;
-
-background: #023047;
-
-padding-top: 100px;
-
-transition: 0.4s;
-
-z-index: 9998;
-
-}
-
-.menu a {
-
-display: block;
-
-color: white;
-
-text-decoration: none;
-
-padding: 15px 25px;
-
-font-size: 20px;
-
-}
-
-.menu a:hover {
-
-background: #ff6f61;
-
-}
-.map-button{
-
-display:inline-block;
-
-margin:20px 0;
-
-background:#ff6f61;
-color:white;
-
-padding:12px 25px;
-
-border-radius:10px;
-
-text-decoration:none;
-
-font-size:18px;
-
-font-weight:bold;
-
-}
-
-.map-button:hover{
-
-background:#ff8c7a;
-
-}
-.whatsapp-button{
-
-position:fixed;
-
-bottom:20px;
-right:20px;
-
-background:#25D366;
-
-color:white;
-
-padding:15px 20px;
-
-border-radius:50px;
-
-font-size:16px;
-
-text-decoration:none;
-
-font-weight:bold;
-
-box-shadow:0 5px 10px rgba(0,0,0,0.3);
-
-z-index:999;
-
-}
-
-.whatsapp-button:hover{
-
-background:#1ebe5d;
-
+.whatsapp-button:hover { background:#1ebe5d; }
+
+/* RESPONSIVE */
+@media screen and (max-width:768px){
+    .hero {
+        justify-content:center;
+        padding:0 20px;
+        text-align:center;
+    }
+    .hero-text { max-width:90%; }
+    .hero h1 { font-size:36px; }
+    .hero p { font-size:18px; }
+    #menu a, .side-menu a { font-size:18px; padding:12px 20px; }
 }
