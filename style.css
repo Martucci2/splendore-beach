@@ -8,10 +8,22 @@ background:#e6f7ff;
 
 
 .hero{
-background-image: url("assets/spiaggia.jpg");
-background-size: cover;
-background-position: center;
-height: 100vh;
+
+background-image:url("assets/spiaggia.jpg");
+background-size:cover;
+background-position:center;
+
+height:100vh;
+
+display:flex;
+align-items:center;
+justify-content:flex-end;
+
+color:white;
+text-align:right;
+
+padding-right:60px;
+
 }
 
 display:flex;
