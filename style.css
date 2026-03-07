@@ -371,3 +371,35 @@ font-weight:bold;
 background:#ff8c7a;
 
 }
+.whatsapp-button{
+
+position:fixed;
+
+bottom:20px;
+right:20px;
+
+background:#25D366;
+
+color:white;
+
+padding:15px 20px;
+
+border-radius:50px;
+
+font-size:16px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+box-shadow:0 5px 10px rgba(0,0,0,0.3);
+
+z-index:999;
+
+}
+
+.whatsapp-button:hover{
+
+background:#1ebe5d;
+
+}
