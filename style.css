@@ -135,3 +135,12 @@ footer {
     .hero p { font-size:18px; }
     #menu a, .side-menu a { font-size:18px; padding:12px 20px; }
 }
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+.whatsapp-button {
+  animation: bounce 2s infinite;
+}
