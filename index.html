@@ -1,62 +1,142 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Splendore Beach - Cattolica</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Splendore Beach</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <header class="hero">
+
+<header class="hero">
 
 <div class="menu-icon" onclick="toggleMenu()">
 ☰
 </div>
 
 <nav id="menu">
-<a href="#menu-section">Il nostro menu</a>
-<a href="#specialita">Le nostre specialità</a>
+
+<a href="#menu-section">Il nostro Menu</a>
+<a href="#specialita">Le nostre Specialità</a>
 <a href="#contatti">Contatti</a>
-<a href="#dove">Dove siamo</a>
+<a href="#dove">Dove Siamo</a>
+
 </nav>
 
 <div class="hero-text">
+
 <h1>Splendore Beach</h1>
-<p>Pokè • Cocktails • Crêpes sulla spiaggia</p>
+<p>Pokè • Cocktails • Crêpes sulla Spiaggia</p>
+
 </div>
 
 </header>
 
-    <section id="menu">
-        <h2>Il Nostro Menu</h2>
-        <ul>
-            <li>Pokè Bowl 🍲</li>
-            <li>Cocktails Esotici 🍹</li>
-            <li>Crêpes Dolci e Salate 🥞</li>
-            <li>Insalate e Snack Freschi 🥗</li>
-        </ul>
-    </section>
 
-    <section id="specialita">
-        <h2>Le Nostre Specialità</h2>
-        <p>Prova il Pokè di tonno fresco, le nostre crêpes al cioccolato o i cocktails tropicali preparati dai nostri barman!</p>
-    </section>
+<section id="menu-section">
 
-    <section id="contatti">
-    <h2>Contattaci</h2>
-    <p>Email: <a href="mailto:info@splendorebeach.it">info@splendorebeach.it</a></p>
-    <p>Telefono Romina: <a href="tel:+393331179093">333 117 9093</a></p>
-    <p>Telefono Pasquale: <a href="tel:+393450847790">345 084 7790</a></p>
+<h2>Il Nostro Menu</h2>
+
+<ul>
+
+<li>Pokè Bowl con tonno fresco</li>
+<li>Pokè Bowl salmone e avocado</li>
+<li>Crêpes dolci alla Nutella</li>
+<li>Crêpes salate prosciutto e formaggio</li>
+<li>Cocktails tropicali</li>
+<li>Spritz e aperitivi</li>
+<li>Insalate fresche</li>
+
+</ul>
+
 </section>
 
-    <section id="dove">
-        <h2>Dove Siamo</h2>
-        <p>Via Lungomare 1, Cattolica (RN), Italia</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
 
-    <footer>
-        <p>"Vivi il sole, il mare e il gusto – Splendore Beach ti aspetta!"</p>
-    </footer>
+<section id="specialita">
+
+<h2>Le Nostre Specialità</h2>
+
+<p>
+
+Il nostro ristorante sulla spiaggia offre sapori freschi e tropicali.  
+Pokè preparati al momento, crêpes dolci e salate e cocktails perfetti da gustare davanti al mare.
+
+</p>
+
+</section>
+
+
+<section id="contatti">
+
+<h2>Contattaci</h2>
+
+<p>Romina:  
+<a href="tel:+393331179093">333 117 9093</a>
+</p>
+
+<p>Pasquale:  
+<a href="tel:+393450847790">345 084 7790</a>
+</p>
+
+<p>Email: info@splendorebeach.it</p>
+
+</section>
+
+
+<section id="dove">
+
+<h2>Dove Siamo</h2>
+
+<p>Lungomare di Cattolica</p>
+
+<iframe 
+src="https://maps.google.com/maps?q=cattolica&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="300"
+style="border:0;"
+></iframe>
+
+</section>
+
+
+<footer>
+
+<p>
+
+"Vivi il sole, il mare e il gusto.  
+Splendore Beach ti aspetta."
+
+</p>
+
+</footer>
+
+
+
+<script>
+
+function toggleMenu(){
+
+var menu = document.getElementById("menu");
+
+if(menu.style.display === "block"){
+
+menu.style.display = "none";
+
+}else{
+
+menu.style.display = "block";
+
+}
+
+}
+
+</script>
+
 </body>
+
 </html>
