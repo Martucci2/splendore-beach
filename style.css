@@ -5,6 +5,20 @@ body {
     padding: 0;
     background: #a7d8de; /* Azzurro mare chiaro */
     color: #023047; /* Blu profondo testo */
+    <script>
+
+function toggleMenu(){
+var menu = document.getElementById("menu");
+
+if(menu.style.display === "block"){
+menu.style.display = "none";
+}else{
+menu.style.display = "block";
+}
+
+}
+
+</script>
 }
 
 /* Header */
