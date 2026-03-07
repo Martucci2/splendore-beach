@@ -44,7 +44,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     width: 0;
-    animation: typing 4s steps(50, end) forwards, blink 0.7s step-end infinite;
+    animation: typing 6s steps(70, end) forwards, blink 0.7s step-end infinite;
 }
 
 @keyframes typing {
