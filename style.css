@@ -133,4 +133,37 @@ img {
 .button:hover {
     background: #ff9478;
     transform: scale(1.05);
+    .menu-icon{
+position:absolute;
+top:20px;
+left:20px;
+font-size:30px;
+cursor:pointer;
+background:rgba(0,0,0,0.5);
+padding:10px;
+border-radius:8px;
+}
+
+nav{
+display:none;
+position:absolute;
+top:70px;
+left:20px;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.3);
+}
+
+nav a{
+display:block;
+margin:10px 0;
+color:#023047;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ff6f61;
+}
 }
