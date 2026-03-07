@@ -6,13 +6,13 @@ body {
 }
 
 .hero{
-    background-image: url("assets/spiaggia-mare.jpg"); /* nuova immagine di mare */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-image: url("assets/spiaggia-mare.jpg"); /* la tua immagine */
+    background-size: cover;           /* occupa tutto lo schermo */
+    background-position: center;      /* centrata */
+    height: 100vh;                    /* altezza schermo completo */
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-end;        /* testo hero a destra */
     padding-right: 60px;
     color: white;
     text-align: right;
