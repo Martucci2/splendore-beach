@@ -1,38 +1,44 @@
-/* RESET */
+/* ===== FONT IMPORT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300;400;600&display=swap');
+
+/* ===== RESET BASE ===== */
 body {
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#e6f7ff;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #023047;
+    line-height: 1.6;
+    background: #e6f7ff;
 }
 
+/* ===== HERO ===== */
 .hero{
-    background-image: url("assets/spiaggia-mare.jpg"); /* la tua immagine */
-    background-size: cover;           /* occupa tutto lo schermo */
-    background-position: center;      /* centrata */
-    height: 100vh;                    /* altezza schermo completo */
+    background-image: url("assets/spiaggia-mare.jpg"); /* immagine sfondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: flex-end;        /* testo hero a destra */
-    padding-right: 60px;
-    color: white;
-    text-align: right;
+    justify-content: center; /* centro orizzontale */
+    text-align: center;
     position: relative;
+    color: white;
 }
 
-/* Hero testo centrato */
+/* ===== HERO TEXT TYPING ===== */
 .hero-text.center-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
     max-width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 }
 
-/* Effetto typing */
 .typing-text {
     border-right: 3px solid white;
     white-space: nowrap;
@@ -51,14 +57,7 @@ body {
     100% { border-color: white; }
 }
 
-/* Responsive */
-@media screen and (max-width:768px){
-    .hero-text.center-text { font-size:28px; }
-}
-.hero h1 { font-size:50px; margin:0; }
-.hero p { font-size:22px; }
-
-/* MENU HAMBURGER */
+/* ===== MENU HAMBURGER ===== */
 .menu-icon {
     position: fixed;
     top: 20px;
@@ -72,7 +71,7 @@ body {
     z-index: 1000;
 }
 
-/* MENU LATERALE */
+/* ===== MENU LATERALE ===== */
 .side-menu, #menu {
     position: fixed;
     top:0;
@@ -84,6 +83,7 @@ body {
     transition:0.4s;
     z-index: 999;
 }
+
 .side-menu a, #menu a {
     display:block;
     padding:15px 25px;
@@ -92,26 +92,55 @@ body {
     text-decoration:none;
     transition:0.3s;
 }
-.side-menu a:hover, #menu a:hover { background:#ff6f61; padding-left:35px; }
 
-/* SEZIONI */
+.side-menu a:hover, #menu a:hover { 
+    background:#ff6f61; 
+    padding-left:35px; 
+}
+
+/* ===== SEZIONI ===== */
 section {
     padding:60px 20px;
     text-align:center;
 }
+
 section h2 {
-    font-size:32px;
-    color:#ff6f61;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    color: #ff6f61;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
-ul { list-style:none; padding:0; }
-ul li { padding:10px; font-size:18px; }
 
-/* COLORI SPECIALI SEZIONI */
-#specialita { background:#fff3e0; }
-#contatti { background:#e0f7fa; }
-#dove { background:#fff3e0; }
+section p,
+ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: #023047;
+}
 
-/* BOTTONE MAPPA */
+ul { 
+    list-style:none; 
+    padding:0; 
+}
+
+ul li { 
+    padding:10px; 
+}
+
+/* ===== LINK E BOTTONI ===== */
+a {
+    font-weight: 600;
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e65a50;
+    text-decoration: underline;
+}
+
 .map-button {
     display:inline-block;
     margin:20px 0;
@@ -122,19 +151,12 @@ ul li { padding:10px; font-size:18px; }
     text-decoration:none;
     font-size:18px;
     font-weight:bold;
+    transition:0.3s;
 }
+
 .map-button:hover { background:#ff8c7a; }
 
-/* FOOTER */
-footer {
-    background:#023047;
-    color:#ffd60a;
-    text-align:center;
-    padding:30px;
-    font-style:italic;
-}
-
-/* BOTTONE WHATSAPP */
+/* ===== WHATSAPP BUTTON ===== */
 .whatsapp-button {
     position:fixed;
     bottom:20px;
@@ -148,48 +170,34 @@ footer {
     font-weight:bold;
     box-shadow:0 5px 10px rgba(0,0,0,0.3);
     z-index:9999;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    animation: bounce 2s infinite;
 }
+
 .whatsapp-button:hover { background:#1ebe5d; }
 
-/* RESPONSIVE */
-@media screen and (max-width:768px){
-    .hero {
-        justify-content:center;
-        padding:0 20px;
-        text-align:center;
-    }
-    .hero-text { max-width:90%; }
-    .hero h1 { font-size:36px; }
-    .hero p { font-size:18px; }
-    #menu a, .side-menu a { font-size:18px; padding:12px 20px; }
-}
+/* ===== ANIMAZIONE BOUNCE ===== */
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
   40% { transform: translateY(-10px); }
   60% { transform: translateY(-5px); }
 }
 
-.whatsapp-button {
-  animation: bounce 2s infinite;
-}
-/* Animazione fade-in per la homepage */
-.animated-text {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s forwards;
-}
-
-.animated-text.delay {
-    animation-delay: 0.8s;
+/* ===== FOOTER ===== */
+footer {
+    background:#023047;
+    color:#ffd60a;
+    text-align:center;
+    padding:30px;
+    font-style:italic;
 }
 
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width:768px){
+    .hero-text.center-text { font-size:28px; }
+    #menu a, .side-menu a { font-size:18px; padding:12px 20px; }
+    section h2 { font-size:2rem; }
+    section p, ul li { font-size:1rem; }
 }
