@@ -345,3 +345,29 @@ font-size: 20px;
 background: #ff6f61;
 
 }
+.map-button{
+
+display:inline-block;
+
+margin:20px 0;
+
+background:#ff6f61;
+color:white;
+
+padding:12px 25px;
+
+border-radius:10px;
+
+text-decoration:none;
+
+font-size:18px;
+
+font-weight:bold;
+
+}
+
+.map-button:hover{
+
+background:#ff8c7a;
+
+}
