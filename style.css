@@ -110,7 +110,7 @@ section {
 section h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: clamp(1.5rem, 3vw, 2.5rem);
-    color: #ff8c42;
+    color: #0b5fa5;
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -120,7 +120,7 @@ section p,
 ul li {
     font-family: 'Open Sans', sans-serif;
     font-size: clamp(1rem, 2vw, 1.25rem);
-    color: #023047;
+    color: #2e8b57;
 }
 
 ul { 
@@ -135,7 +135,7 @@ ul li {
 /* ===== LINK E BOTTONI ===== */
 a {
     font-weight: 600;
-    color: #ff8c42;
+    color: #2e8b57;
     text-decoration: none;
 }
 
