@@ -14,7 +14,7 @@ body {
 /* ===== HERO ===== */
 .hero{
     background-image: url("assets/spiaggia-mare.jpg"); /* immagine sfondo */
-    background-size: cover;
+    background-size: 90%;
     background-position: center;
     height: 100vh;
     display: flex;
