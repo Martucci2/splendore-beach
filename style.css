@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    color: #023047;
+    color: #0b3d5c;
     line-height: 1.6;
     background: #e6f7ff;
 }
@@ -109,7 +109,7 @@ section {
 section h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: clamp(1.5rem, 3vw, 2.5rem);
-    color: #ff6f61;
+    color: #ff8c42;
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -134,7 +134,7 @@ ul li {
 /* ===== LINK E BOTTONI ===== */
 a {
     font-weight: 600;
-    color: #ff6f61;
+    color: #ff8c42;
     text-decoration: none;
 }
 
@@ -146,7 +146,7 @@ a:hover {
 .map-button {
     display:inline-block;
     margin:20px 0;
-    background:#ff6f61;
+    background:#ff8c42;
     color:white;
     padding:12px 25px;
     border-radius:10px;
@@ -189,8 +189,8 @@ a:hover {
 
 /* ===== FOOTER ===== */
 footer {
-    background:#023047;
-    color:#ffd60a;
+    background:#0b3d5c;
+color:#ffdd55;
     text-align:center;
     padding:30px;
     font-style:italic;
