@@ -225,3 +225,18 @@ font-family:'Montserrat', sans-serif;
 .instagram-fixed:hover{
 background:#c72a5d;
 }
+/* SCRITTA BAR RISTORANTE */
+
+.bar-ristorante{
+background:#f2d6a2; /* colore sabbia */
+text-align:center;
+padding:30px 20px;
+}
+
+.bar-ristorante h2{
+font-size:40px;
+color:#0b5fa5; /* blu mare */
+font-family:'Montserrat', sans-serif;
+letter-spacing:2px;
+margin:0;
+}
