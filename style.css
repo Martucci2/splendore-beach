@@ -1,3 +1,7 @@
+@font-face {
+font-family: 'Badaboom';
+src: url('assets/BADABB__.TTF') format('truetype');
+}
 /* ===== FONT IMPORT ===== */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300;400;600&display=swap');
 
@@ -235,9 +239,8 @@ padding:30px 20px;
 }
 
 .bar-ristorante h2{
-font-size:40px;
-color:#0b5fa5; /* blu mare */
-font-family:'Montserrat', sans-serif;
+font-size:50px;
+color:#0b5fa5;
+font-family:'Badaboom', sans-serif;
 letter-spacing:2px;
-margin:0;
 }
