@@ -220,6 +220,7 @@ font-weight:bold;
 box-shadow:0 5px 10px rgba(0,0,0,0.3);
 z-index:9999;
 font-family:'Montserrat', sans-serif;
+    animation: bounce 2s infinite;
 }
 
 .instagram-fixed:hover{
