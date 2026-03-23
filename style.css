@@ -308,19 +308,41 @@ text-align:center;
 padding:60px 20px;
 }
 
-.menu-button{
-display:inline-block;
-background:#0b5fa5;
-color:white;
-padding:18px 30px;
-border-radius:12px;
-font-size:20px;
-font-weight:bold;
-text-decoration:none;
-margin-top:20px;
-transition:0.3s;
+/* MENU BUTTON ELEGANTE */
+
+.menu-home{
+text-align:center;
+padding:80px 20px;
 }
 
+.menu-home h2{
+font-size:32px;
+color:#0b5fa5;
+margin-bottom:20px;
+}
+
+.menu-button{
+display:inline-block;
+background:linear-gradient(135deg, #0b5fa5, #2e8b57);
+color:white;
+padding:20px 40px;
+border-radius:50px;
+font-size:22px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+transition:0.3s;
+animation: pulse 2s infinite;
+}
+
+/* effetto hover */
 .menu-button:hover{
-background:#084a82;
+transform:scale(1.1);
+}
+
+/* animazione leggera */
+@keyframes pulse{
+0%{ transform:scale(1); }
+50%{ transform:scale(1.05); }
+100%{ transform:scale(1); }
 }
