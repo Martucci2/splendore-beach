@@ -271,27 +271,29 @@ transform:translateY(0);
 }
 /* PAGINA MENU */
 
-.menu-page{
-padding:40px 20px;
-max-width:900px;
-margin:auto;
-text-align:left;
+..menu-page {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+    background: linear-gradient(135deg, #ffeaa7, #fab1a0); /* gradient caldo e vivace */
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-.menu-page h1{
-text-align:center;
-font-size:40px;
-margin-bottom:30px;
-color:#0b5fa5;
+.menu-page h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #d63031; /* rosso acceso */
 }
 
-.menu-page h2{
-margin-top:30px;
-color:#0b5fa5;
-border-bottom:2px solid #2e8b57;
-padding-bottom:5px;
+.menu-page h2 {
+    margin-top: 30px;
+    color: #0984e3; /* blu vivace */
+    border-bottom: 2px solid #00b894; /* verde acceso */
+    padding-bottom: 5px;
 }
-
 .menu-page ul{
 list-style:none;
 padding:0;
