@@ -301,3 +301,26 @@ padding:0;
 padding:8px 0;
 border-bottom:1px dashed #ccc;
 }
+/* SEZIONE MENU HOME */
+
+.menu-home{
+text-align:center;
+padding:60px 20px;
+}
+
+.menu-button{
+display:inline-block;
+background:#0b5fa5;
+color:white;
+padding:18px 30px;
+border-radius:12px;
+font-size:20px;
+font-weight:bold;
+text-decoration:none;
+margin-top:20px;
+transition:0.3s;
+}
+
+.menu-button:hover{
+background:#084a82;
+}
