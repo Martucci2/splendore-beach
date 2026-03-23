@@ -238,13 +238,13 @@ text-align:center;
 padding:30px 20px;
 }
 
-.bar-ristorante h2{
-font-size:50px;
-color:#0b5fa5;
-font-family:'Badaboom', sans-serif;
-letter-spacing:2px;
-opacity:0;
-animation: salita 1.5s ease-out;
+..bar-ristorante h2 {
+    font-size:50px;
+    color:#0b5fa5;
+    font-family:'Badaboom', sans-serif;
+    letter-spacing:2px;
+    opacity:0;
+    animation: salita 1.5s ease-out forwards; /* <-- aggiunto forwards */
 }
 /* IMMAGINE PIU ADATTA PER TELEFONO */
 
