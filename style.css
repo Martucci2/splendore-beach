@@ -479,3 +479,66 @@ opacity:1;
 transform:translateX(0);
 }
 }
+/* ===== PAGINA CAFFETTERIA ===== */
+
+.caffetteria-page{
+padding:40px 20px;
+max-width:900px;
+margin:auto;
+text-align:left;
+background:linear-gradient(135deg,#fceabb,#f8b500);
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+animation: fadeCaffetteria 1s ease-in-out;
+}
+
+.caffetteria-page h1{
+text-align:center;
+font-size:40px;
+margin-bottom:20px;
+color:#6b3e26;
+animation: slideDown 1s ease-out;
+}
+
+.caffetteria-page h2{
+margin-top:30px;
+color:#8b4513;
+border-bottom:3px solid #d2691e;
+padding-bottom:5px;
+}
+
+.caffetteria-page ul{
+list-style:none;
+padding:0;
+}
+
+.caffetteria-page li{
+padding:12px;
+margin:6px 0;
+background:rgba(255,255,255,0.6);
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+opacity:0;
+transform:translateX(-20px);
+animation: caffetteriaFade 0.5s ease forwards;
+}
+
+.caffetteria-page li:hover{
+background:#fff3cd;
+transform:scale(1.05);
+transition:0.3s;
+}
+
+/* animazioni */
+
+@keyframes fadeCaffetteria{
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes caffetteriaFade{
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
