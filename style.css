@@ -434,3 +434,48 @@ opacity:1;
 transform:translateX(0);
 }
 }
+/* TITOLI CATEGORIE COCKTAILS */
+
+.cocktails-page h2{
+margin-top:30px;
+color:#ff6f61;
+border-bottom:3px solid #ff8c42;
+padding-bottom:5px;
+font-size:28px;
+animation: slideFade 1s ease forwards;
+}
+
+/* LISTA COCKTAILS */
+
+.cocktails-page ul{
+list-style:none;
+padding:0;
+}
+
+.cocktails-page li{
+padding:12px;
+margin:6px 0;
+background:rgba(255,255,255,0.6);
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+opacity:0;
+transform:translateX(-20px);
+animation: cocktailFade 0.5s ease forwards;
+}
+
+/* HOVER */
+
+.cocktails-page li:hover{
+background:#ffeaa7;
+transform:scale(1.05);
+transition:0.3s;
+}
+
+/* ANIMAZIONE */
+
+@keyframes cocktailFade{
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
